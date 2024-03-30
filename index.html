@@ -1,289 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bablo - Unleashing Productivity</title>
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            transition: background-color 0.5s, color 0.5s;
-        }
+  <head>
+    <title>Original Feisty Grasshopper</title>
+    <meta property="og:title" content="Original Feisty Grasshopper" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-        header {
-            background-color: #232f3e;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            transition: background-color 0.5s, color 0.5s;
-        }
-
-        h1 {
-            font-size: 48px;
-            font-weight: bold;
-            margin: 0;
-            color: #FF9900; /* Amazon Orange */
-        }
-
-        nav {
-            background-color: #2c3e50; /* Dark Blue-Grey */
-            padding: 10px;
-            text-align: center;
-            transition: background-color 0.5s;
-        }
-
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 20px;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
-
-        section {
-            padding: 40px 20px;
-            background-color: #ffffff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin: 20px;
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-
-        h2 {
-            color: #FF9900; /* Amazon Orange */
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        footer {
-            background-color: #232f3e;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            transition: background-color 0.5s;
-        }
-
-        .cta-section {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .launch-button, .subscribe-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            color: #ffffff;
-            background-color: #FF9900; /* Amazon Orange */
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            margin-top: 20px;
-            cursor: pointer;
-        }
-
-        .launch-button:hover, .subscribe-button:hover {
-            background-color: #e68200; /* Darker Orange on hover */
-        }
-
-        .email-section {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .email-input {
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-right: 10px;
-            width: 300px;
-        }
-
-        /* New styles for team, features, and testimonials sections */
-        .team-member, .feature-item, .testimonial {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .team-member img, .feature-item img, .testimonial img {
-            width: 40%;
-            margin-right: 20px;
-        }
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
-</head>
-<body>
-    <header>
-        <h1>Bablo - Unleashing Productivity</h1>
-    </header>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-    <nav>
-        <a href="#about" onclick="scrollToSection('#about')">About</a>
-        <a href="#launch" onclick="scrollToSection('#launch')">Upcoming Launch</a>
-        <a href="#founder" onclick="scrollToSection('#founder')">Founder</a>
-        <a href="#cofounders" onclick="scrollToSection('#cofounders')">Co-founders</a>
-        <a href="#landscape" onclick="scrollToSection('#landscape')">Current Landscape</a>
-        <a href="#perspectives" onclick="scrollToSection('#perspectives')">Transforming Perspectives</a>
-        <a href="#team" onclick="scrollToSection('#team')">Meet the Team</a>
-        <a href="#features" onclick="scrollToSection('#features')">Key Features</a>
-        <a href="#testimonials" onclick="scrollToSection('#testimonials')">Testimonials</a>
-        <a href="#contact" onclick="scrollToSection('#contact')">Contact Us</a>
-    </nav>
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
-    <section id="about">
-        <h2>About Bablo</h2>
-        <p>Welcome to Bablo, where innovation meets productivity. In the fast-paced landscape of today, Bablo is set to redefine how you approach your tasks and work. Our mission is to empower individuals and businesses to achieve their goals efficiently, one organized step at a time.</p>
-        <p>With our commitment to simplicity and effectiveness, Bablo strives to become an indispensable tool for users looking to streamline their daily workflows. We believe in making productivity accessible to everyone, regardless of their background or expertise.</p>
-    </section>
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
 
-    <section id="launch">
-        <h2>Upcoming Launch</h2>
-        <p>We are thrilled to announce the imminent launch of Bablo within the next three months! As we gear up for this exciting milestone, we invite you to join us on this journey. Bablo is not just an app; it's a paradigm shift, a tool designed to simplify your daily routines, optimize your workflow, and elevate your efficiency to new heights.</p>
-        <p>Our vision is to create a community of empowered individuals who harness the full potential of their time, achieving their aspirations and contributing to a more productive world. The upcoming launch is not just about introducing a new app; it's about catalyzing positive change in the way we approach productivity.</p>
-    </section>
-
-    <section id="founder">
-        <h2>Founder - Prasanna</h2>
-        <p>Meet Prasanna, the visionary founder behind Bablo. With a passion for technology and a deep understanding of productivity challenges, Prasanna is on a mission to revolutionize the way we work. His expertise and dedication are driving the development of Bablo, ensuring it becomes an indispensable tool for individuals and businesses alike.</p>
-        <p>Prasanna envisions a world where productivity is not a struggle but a seamless part of our daily lives. His commitment to innovation and user-centric design is at the core of Bablo's philosophy, making it a tool that adapts to your needs and enhances your productivity journey.</p>
-    </section>
-
-    <section id="cofounders">
-        <h2>Co-founders - Mothilal, Musha Lohith</h2>
-        <p>Bablo is not just Prasanna's vision; it's a collaborative effort with the brilliant minds of co-founders Mothilal and Musha Lohith. Mothilal brings strategic insight and technical expertise, ensuring Bablo is a robust and reliable platform. Meanwhile, Musha Lohith focuses on user experience, making Bablo intuitive and enjoyable for all users.</p>
-        <p>Together, the co-founders form a dynamic team committed to delivering a productivity solution that goes beyond expectations. Bablo's success is not just about features; it's about the synergy of minds dedicated to shaping a future where productivity is seamless and accessible.</p>
-    </section>
-
-    <section id="landscape">
-        <h2>The Current Productivity Landscape</h2>
-        <p>In the current world, productivity is often hindered by a myriad of distractions, overloaded schedules, and inefficient tools. Many struggle to balance work and personal life, leading to stress and burnout. The need for a transformative solution is evident, and that's where Bablo comes in.</p>
-        <div class="image-container">
-            <img src="https://via.placeholder.com/800x400" alt="Busy Workspace">
-        </div>
-    </section>
-
-    <section id="perspectives">
-        <h2>Transforming Perspectives</h2>
-        <p>Bablo aspires to transform this narrative, providing a user-friendly and intuitive platform. Imagine a world where managing tasks becomes seamless, and productivity is no longer an elusive goal. With Bablo, you can prioritize your time, collaborate effortlessly, and achieve a sense of balance in your personal and professional life.</p>
-    </section>
-
-    <section id="team">
-        <h2>Meet the Team</h2>
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="Prasanna - Founder">
-            <div>
-                <h3>Prasanna</h3>
-                <p>Founder</p>
+      <div class="home-container">
+        <div class="home-webpage">
+          <span class="home-text"><span>OUR BUILDS</span></span>
+          <span class="home-text02"><span>follow us on</span></span>
+          <div class="home-mentor">
+            <img
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84b4b8ab-5757-409b-9b77-f1b4d683da97/f4375e2f-8629-422b-a911-fa1cae32bb49?org_if_sml=1604&amp;force_format=original"
+              alt="Rectangle32021"
+              class="home-rectangle3"
+            />
+            <img
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84b4b8ab-5757-409b-9b77-f1b4d683da97/145e0fec-e4bd-4a89-b497-184379e6fe12?org_if_sml=1438&amp;force_format=original"
+              alt="Rectangle42021"
+              class="home-rectangle4"
+            />
+          </div>
+          <div class="home-papi">
+            <img
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84b4b8ab-5757-409b-9b77-f1b4d683da97/6d9b6e0a-30e9-41a0-87da-e89558c42ed0?org_if_sml=1578&amp;force_format=original"
+              alt="Rectangle32021"
+              class="home-rectangle31"
+            />
+            <img
+              src="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/84b4b8ab-5757-409b-9b77-f1b4d683da97/44d9b3c7-b652-4009-b69a-8487b454f0d3?org_if_sml=1438&amp;force_format=original"
+              alt="Rectangle42021"
+              class="home-rectangle41"
+            />
+          </div>
+          <span class="home-text04">
+            <span>MAKING EARTH A PRODUCTIVE PLACE</span>
+          </span>
+          <img
+            src="public/external/line1stroke2021-qizki.svg"
+            alt="Line1Stroke2021"
+            class="home-line1-stroke"
+          />
+          <img
+            src="public/external/line2stroke2021-dioe.svg"
+            alt="Line2Stroke2021"
+            class="home-line2-stroke"
+          />
+          <span class="home-text06"><span>Mentor</span></span>
+          <span class="home-text08"><span>Papi</span></span>
+          <span class="home-text10"><span>Physical API</span></span>
+          <span class="home-text12"><span>Releasing soon</span></span>
+          <span class="home-text14">
+            <span>
+              AI Productivity partner. Analyses and provide mentorship.
+            </span>
+          </span>
+          <span class="home-text16"><span>@bablo_Ad</span></span>
+          <span class="home-text18"><span>ABOUT US</span></span>
+          <span class="home-text20">
+            <span>
+              We are a passionate tribe who are on the purpose to help people to
+              get rid of distractions and build what they love.
+            </span>
+          </span>
+          <div class="home-social">
+            <img
+              src="public/external/vector2021-uw6i.svg"
+              alt="Vector2021"
+              class="home-vector"
+            />
+            <img
+              src="public/external/vector2021-ernk.svg"
+              alt="Vector2021"
+              class="home-vector1"
+            />
+            <div class="home-clippathgroup">
+              <div class="home-prime-twitter0">
+                <img
+                  src="public/external/vector2021-m4vf.svg"
+                  alt="Vector2021"
+                  class="home-vector2"
+                />
+              </div>
+              <div class="home-group">
+                <img
+                  src="public/external/vector2021-zglu.svg"
+                  alt="Vector2021"
+                  class="home-vector3"
+                />
+              </div>
             </div>
-        </div>
-
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="Mothilal - Co-founder">
-            <div>
-                <h3>Mothilal</h3>
-                <p>Co-founder</p>
+            <div class="home-group1">
+              <img
+                src="public/external/vector2021-mwj.svg"
+                alt="Vector2021"
+                class="home-vector4"
+              />
+              <img
+                src="public/external/vector2021-i7e4.svg"
+                alt="Vector2021"
+                class="home-vector5"
+              />
+              <img
+                src="public/external/vector2021-meo2.svg"
+                alt="Vector2021"
+                class="home-vector6"
+              />
             </div>
+            <img
+              src="public/external/vector2021-cdy.svg"
+              alt="Vector2021"
+              class="home-vector7"
+            />
+          </div>
+          <div class="home-group5">
+            <span class="home-text22"><span>BABLO AD</span></span>
+            <span class="home-text24"><span>Contact</span></span>
+            <span class="home-text26"><span>About Us</span></span>
+          </div>
         </div>
-
-        <div class="team-member">
-            <img src="https://via.placeholder.com/150" alt="Musha Lohith - Co-founder">
-            <div>
-                <h3>Musha Lohith</h3>
-                <p>Co-founder</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <h2>Key Features</h2>
-        <div class="feature-item">
-            <img src="https://via.placeholder.com/150" alt="Feature 1">
-            <div>
-                <h3>Intuitive Design</h3>
-                <p>Streamlined and user-friendly interface for a seamless experience.</p>
-            </div>
-        </div>
-
-        <div class="feature-item">
-            <img src="https://via.placeholder.com/150" alt="Feature 2">
-            <div>
-                <h3>Task Automation</h3>
-                <p>Automate repetitive tasks to save time and boost efficiency.</p>
-            </div>
-        </div>
-
-        <div class="feature-item">
-            <img src="https://via.placeholder.com/150" alt="Feature 3">
-            <div>
-                <h3>Collaboration Tools</h3>
-                <p>Enhance teamwork with collaborative features and communication tools.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonial">
-            <img src="https://via.placeholder.com/150" alt="User 1">
-            <div>
-                <blockquote>
-                    "Bablo has transformed the way I work. It's like having a personal productivity assistant!"
-                </blockquote>
-                <cite>- John Doe</cite>
-            </div>
-        </div>
-
-        <div class="testimonial">
-            <img src="https://via.placeholder.com/150" alt="User 2">
-            <div>
-                <blockquote>
-                    "I've tried many productivity apps, but Bablo stands out with its simplicity and powerful features."
-                </blockquote>
-                <cite>- Jane Smith</cite>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <h2>Stay Informed</h2>
-        <p>Be the first to know about our app launch. Subscribe with your email, and we'll notify you as soon as Bablo is ready for you!</p>
-        <div class="email-section">
-            <input type="email" class="email-input" placeholder="Your Email Address">
-            <a href="#" class="subscribe-button">Subscribe</a>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Bablo. All rights reserved.</p>
-    </footer>
-
-    <script>
-        function scrollToSection(sectionId) {
-            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
-        }
-    </script>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
